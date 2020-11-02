@@ -1,0 +1,43 @@
+body {
+    background: #f3f3f3;
+}
+
+.product_title {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.product_text {
+    padding-right: 20px;
+}
+
+.product_desc {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.stripe-button-el {
+    width: 100%;
+    display: block !important;
+    background-color: #868e96 !important;
+}
+
+.errolist li {
+    color: red;
+    font-weight: bold;
+}
+
+.custom_div {
+    margin-bottom: 20px !important;
+}
+
+.footer {
+    clear: both;
+    position: fixed;
+    Width: 100%;
+    bottom: 0;
+}
