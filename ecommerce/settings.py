@@ -138,8 +138,5 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 
-# Stripe Config key
-STRIPE_PUBLISHABLE_KEY = 'pk_test_51Hcv8hJAOrx8iRKwngCo5UpmOiSvC55VWQugf1IAsesAVfi3gsY3zdJldo8GngXWaPCn57kt1btTGtmTHYUfjq1g002MvaENpO'
-STRIPE_SECRET_KEY = 'sk_test_51Hcv8hJAOrx8iRKwOH9X7Vs7Nr6vzwdlKKfg5EzvwAe2VPRmiBuCgv3swz6ZaTn6JhrkKbFsvyTpGbRzehQkGUn3008wL5fJNT'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
