@@ -10,8 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
-import dj_database_url
-from decouple import config
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -36,7 +34,6 @@ INSTALLED_APPS = [
     'store',
     'stripe',
     'crispy_forms',
-    'storages',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -140,6 +137,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+STRIPE_PUBLISHABLE_KEY = "pk_test_51Hcv8hJAOrx8iRKwngCo5UpmOiSvC55VWQugf1IAsesAVfi3gsY3zdJldo8GngXWaPCn57kt1btTGtmTHYUfjq1g002MvaENpO"
+STRIPE_SECRET_KEY = "sk_test_51Hcv8hJAOrx8iRKwOH9X7Vs7Nr6vzwdlKKfg5EzvwAe2VPRmiBuCgv3swz6ZaTn6JhrkKbFsvyTpGbRzehQkGUn3008wL5fJNT"
 
 try:
     from .local_settings import *
