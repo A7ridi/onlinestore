@@ -23,7 +23,7 @@ Store - Home
   </div>
 </div>
 
-{% comment %} {{ product.image.url }} {% endcomment %}
+
 <div class="container">
     <div class="row">
        {% for product in products %}
@@ -31,7 +31,7 @@ Store - Home
           <div class="card mb-4" style=" border-color: transparent">
             <div class="p-4">
               <a href="{{ product.get_urls }}">
-                <img src="{% static '/img/product-1.png' %}" class="card-img-top" alt="{{ product.name }}">
+                <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
               </a>
             </div>
             <div class="card-footer d-flex jusitfy-content-between" style="background: transparent; border-color: transparent">
